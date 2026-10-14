@@ -1,0 +1,2505 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        xmlns:meta="https://api.nav.gov.hu/definitions/form_xsd_metaschema/1.0"
+        xmlns:tns="https://soap.api.nav.gov.hu/definitions/model/2.0/VPOP_KSZ17/1.11"
+        xmlns:xs="http://www.w3.org/2001/XMLSchema"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        targetNamespace="https://soap.api.nav.gov.hu/definitions/model/2.0/VPOP_KSZ17/1.11">
+   <import namespace="https://api.nav.gov.hu/definitions/form_xsd_metaschema/1.0"
+           schemaLocation="form_xsd_metaschema.xsd"/>
+   <element name="Doc_VPOP_KSZ17"
+            type="tns:Doc_VPOP_KSZ17_Type"
+            meta:metaType="DocMetaType">
+      <annotation>
+         <documentation>Kijelölt személyre vonatkozó tájékoztatás a pénzmosás és a terrorizmus finanszírozása megelőzéséről és megakadályozásáról szóló 2017. évi LIII. törvény (Pmt.) 31. § (1) bekezdése, és az Európai Unió és az ENSZ Biztonsági Tanácsa által elrendelt pénzügyi és vagyoni korlátozó intézkedések végrehajtásáról szóló 2017. évi LII. törvény (Kit.) 4. § (2) bekezdése alapján</documentation>
+      </annotation>
+   </element>
+   <complexType name="Doc_VPOP_KSZ17_Type">
+      <annotation>
+         <documentation>A teljes bizonylat szerkezetet leíró típus</documentation>
+      </annotation>
+      <sequence>
+         <element name="Form_VPOP_KSZ17"
+                  type="tns:Form_VPOP_KSZ17_Type"
+                  minOccurs="1"
+                  maxOccurs="1"
+                  meta:metaType="FormMetaType">
+            <annotation>
+               <documentation>VPOP_KSZ17 részbizonylat</documentation>
+            </annotation>
+         </element>
+      </sequence>
+   </complexType>
+   <simpleType name="Enum_VPOP_KSZ17_0A0001C002A">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="Pmt.">
+            <annotation>
+               <documentation>Pmt.</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Kit.">
+            <annotation>
+               <documentation>Kit.</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Mindkettő">
+            <annotation>
+               <documentation>Mindkettő</documentation>
+            </annotation>
+         </enumeration>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_VPOP_KSZ17_0A0001C003A">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="Új szolgáltató">
+            <annotation>
+               <documentation>Új szolgáltató</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Új kijelölt személy">
+            <annotation>
+               <documentation>Új kijelölt személy</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Módosítás kérése">
+            <annotation>
+               <documentation>Módosítás kérése</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Törlés kérése">
+            <annotation>
+               <documentation>Törlés kérése</documentation>
+            </annotation>
+         </enumeration>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_VPOP_KSZ17_0A0001D004A">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="HU">
+            <annotation>
+               <documentation>HU=Magyarország</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="AD">
+            <annotation>
+               <documentation>AD=Andorra</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="AE">
+            <annotation>
+               <documentation>AE=Arab Emírségek</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="AF">
+            <annotation>
+               <documentation>AF=Afganisztán</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="AG">
+            <annotation>
+               <documentation>AG=Antigua és Barbuda</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="AI">
+            <annotation>
+               <documentation>AI=Anguilla</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="AL">
+            <annotation>
+               <documentation>AL=Albánia</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="AM">
+            <annotation>
+               <documentation>AM=Örményország</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="AN">
+            <annotation>
+               <documentation>AN=Holland Antillák</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="AO">
+            <annotation>
+               <documentation>AO=Angola</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="AQ">
+            <annotation>
+               <documentation>AQ=Antarktisz</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="AR">
+            <annotation>
+               <documentation>AR=Argentína</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="AS">
+            <annotation>
+               <documentation>AS=Amerikai Szamoa</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="AT">
+            <annotation>
+               <documentation>AT=Ausztria</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="AU">
+            <annotation>
+               <documentation>AU=Ausztrália</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="AW">
+            <annotation>
+               <documentation>AW=Aruba</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="AX">
+            <annotation>
+               <documentation>AX=Aland szigetek</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="AZ">
+            <annotation>
+               <documentation>AZ=Azerbajdzsán</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="BA">
+            <annotation>
+               <documentation>BA=Bosznia-Hercegovina</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="BB">
+            <annotation>
+               <documentation>BB=Barbados</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="BD">
+            <annotation>
+               <documentation>BD=Banglades</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="BE">
+            <annotation>
+               <documentation>BE=Belgium</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="BF">
+            <annotation>
+               <documentation>BF=Burkina Faso</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="BG">
+            <annotation>
+               <documentation>BG=Bulgária</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="BH">
+            <annotation>
+               <documentation>BH=Bahrein</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="BI">
+            <annotation>
+               <documentation>BI=Burundi</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="BJ">
+            <annotation>
+               <documentation>BJ=Benin</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="BL">
+            <annotation>
+               <documentation>BL=Saint-Barthélemy</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="BM">
+            <annotation>
+               <documentation>BM=Bermuda</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="BN">
+            <annotation>
+               <documentation>BN=Brunei</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="BO">
+            <annotation>
+               <documentation>BO=Bolívia</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="BQ">
+            <annotation>
+               <documentation>BQ=Bonaire, Sint Eustatius és Saba</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="BR">
+            <annotation>
+               <documentation>BR=Brazília</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="BS">
+            <annotation>
+               <documentation>BS=Bahama-szigetek</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="BT">
+            <annotation>
+               <documentation>BT=Bhután</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="BV">
+            <annotation>
+               <documentation>BV=Bouvet Sziget</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="BW">
+            <annotation>
+               <documentation>BW=Botswana</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="BY">
+            <annotation>
+               <documentation>BY=Fehéroroszország</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="BZ">
+            <annotation>
+               <documentation>BZ=Belize</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="CA">
+            <annotation>
+               <documentation>CA=Kanada</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="CC">
+            <annotation>
+               <documentation>CC=Kókusz (Keeling)-szigetek</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="CD">
+            <annotation>
+               <documentation>CD=Kongói Demokratikus Közt.</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="CF">
+            <annotation>
+               <documentation>CF=Közép-afrikai Köztársaság</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="CG">
+            <annotation>
+               <documentation>CG=Kongó</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="CH">
+            <annotation>
+               <documentation>CH=Svájc</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="CI">
+            <annotation>
+               <documentation>CI=Elefántcsontpart</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="CK">
+            <annotation>
+               <documentation>CK=Cook-szigetek</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="CL">
+            <annotation>
+               <documentation>CL=Chile</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="CM">
+            <annotation>
+               <documentation>CM=Kamerun</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="CN">
+            <annotation>
+               <documentation>CN=Kína</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="CO">
+            <annotation>
+               <documentation>CO=Kolumbia</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="CR">
+            <annotation>
+               <documentation>CR=Costa Rica</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="CU">
+            <annotation>
+               <documentation>CU=Kuba</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="CV">
+            <annotation>
+               <documentation>CV=Zöld-foki Köztársaság</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="CW">
+            <annotation>
+               <documentation>CW=Curaçao</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="CX">
+            <annotation>
+               <documentation>CX=Karácsony-sziget</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="CY">
+            <annotation>
+               <documentation>CY=Ciprus</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="CZ">
+            <annotation>
+               <documentation>CZ=Csehország</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="DE">
+            <annotation>
+               <documentation>DE=Németország</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="DJ">
+            <annotation>
+               <documentation>DJ=Dzsibuti</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="DK">
+            <annotation>
+               <documentation>DK=Dánia</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="DM">
+            <annotation>
+               <documentation>DM=Dominikai Közösség</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="DO">
+            <annotation>
+               <documentation>DO=Dominikai Köztársaság</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="DZ">
+            <annotation>
+               <documentation>DZ=Algéria</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="EC">
+            <annotation>
+               <documentation>EC=Ecuador</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="EE">
+            <annotation>
+               <documentation>EE=Észtország</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="EG">
+            <annotation>
+               <documentation>EG=Egyiptom</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="EH">
+            <annotation>
+               <documentation>EH=Nyugat-Szahara</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="ER">
+            <annotation>
+               <documentation>ER=Eritrea</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="ES">
+            <annotation>
+               <documentation>ES=Spanyolország</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="ET">
+            <annotation>
+               <documentation>ET=Etiópia</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="FI">
+            <annotation>
+               <documentation>FI=Finnország</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="FJ">
+            <annotation>
+               <documentation>FJ=Fidzsi-szigetek</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="FK">
+            <annotation>
+               <documentation>FK=Falkland-szigetek (Malvinas)</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="FM">
+            <annotation>
+               <documentation>FM=Mikronézia</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="FO">
+            <annotation>
+               <documentation>FO=Feröer</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="FR">
+            <annotation>
+               <documentation>FR=Franciaország</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="GA">
+            <annotation>
+               <documentation>GA=Gabon</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="GB">
+            <annotation>
+               <documentation>GB=Nagy-Britannia</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="GD">
+            <annotation>
+               <documentation>GD=Grenada</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="GE">
+            <annotation>
+               <documentation>GE=Grúzia</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="GF">
+            <annotation>
+               <documentation>GF=Francia Guyana</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="GG">
+            <annotation>
+               <documentation>GG=Guernsey</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="GH">
+            <annotation>
+               <documentation>GH=Ghána</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="GI">
+            <annotation>
+               <documentation>GI=Gibraltár</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="GL">
+            <annotation>
+               <documentation>GL=Grönland</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="GM">
+            <annotation>
+               <documentation>GM=Gambia</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="GN">
+            <annotation>
+               <documentation>GN=Guinea</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="GP">
+            <annotation>
+               <documentation>GP=Guadeloupe</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="GQ">
+            <annotation>
+               <documentation>GQ=Egyenlítői-Guinea</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="GR">
+            <annotation>
+               <documentation>GR=Görögország</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="GS">
+            <annotation>
+               <documentation>GS=Déli-Georgia és Déli-Sandwich-szigetek</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="GT">
+            <annotation>
+               <documentation>GT=Guatemala</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="GU">
+            <annotation>
+               <documentation>GU=Guam</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="GW">
+            <annotation>
+               <documentation>GW=Bissau-Guinea</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="GY">
+            <annotation>
+               <documentation>GY=Guyana</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="HK">
+            <annotation>
+               <documentation>HK=HongKong</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="HM">
+            <annotation>
+               <documentation>HM=Heard és McDonald-szigetek</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="HN">
+            <annotation>
+               <documentation>HN=Honduras</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="HR">
+            <annotation>
+               <documentation>HR=Horvátország</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="HT">
+            <annotation>
+               <documentation>HT=Haiti</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="ID">
+            <annotation>
+               <documentation>ID=Indonézia</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="IE">
+            <annotation>
+               <documentation>IE=Írország</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="IL">
+            <annotation>
+               <documentation>IL=Izrael</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="IM">
+            <annotation>
+               <documentation>IM=Man-sziget</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="IN">
+            <annotation>
+               <documentation>IN=India</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="IO">
+            <annotation>
+               <documentation>IO=Brit-Indiai Óceáni területek</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="IQ">
+            <annotation>
+               <documentation>IQ=Irak</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="IR">
+            <annotation>
+               <documentation>IR=Irán</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="IS">
+            <annotation>
+               <documentation>IS=Izland</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="IT">
+            <annotation>
+               <documentation>IT=Olaszország</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="JE">
+            <annotation>
+               <documentation>JE=Jersey</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="JM">
+            <annotation>
+               <documentation>JM=Jamaica</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="JO">
+            <annotation>
+               <documentation>JO=Jordánia</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="JP">
+            <annotation>
+               <documentation>JP=Japán</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="KE">
+            <annotation>
+               <documentation>KE=Kenya</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="KG">
+            <annotation>
+               <documentation>KG=Kirgizisztán</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="KH">
+            <annotation>
+               <documentation>KH=Kambodzsa</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="KI">
+            <annotation>
+               <documentation>KI=Kiribati</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="KM">
+            <annotation>
+               <documentation>KM=Comore-szigetek</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="KN">
+            <annotation>
+               <documentation>KN=Saint Kitts és Nevis</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="KP">
+            <annotation>
+               <documentation>KP=Koreai Népi Demokratikus Közt.</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="KR">
+            <annotation>
+               <documentation>KR=Koreai Köztársaság</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="KW">
+            <annotation>
+               <documentation>KW=Kuvait</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="KY">
+            <annotation>
+               <documentation>KY=Kajmán-szigetek</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="KZ">
+            <annotation>
+               <documentation>KZ=Kazahsztán</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="LA">
+            <annotation>
+               <documentation>LA=Laosz</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="LB">
+            <annotation>
+               <documentation>LB=Libanon</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="LC">
+            <annotation>
+               <documentation>LC=Saint Lucia</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="LI">
+            <annotation>
+               <documentation>LI=Liechtenstein</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="LK">
+            <annotation>
+               <documentation>LK=Srí Lanka</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="LR">
+            <annotation>
+               <documentation>LR=Libéria</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="LS">
+            <annotation>
+               <documentation>LS=Lesotho</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="LT">
+            <annotation>
+               <documentation>LT=Litvánia</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="LU">
+            <annotation>
+               <documentation>LU=Luxemburg</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="LV">
+            <annotation>
+               <documentation>LV=Lettország</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="LY">
+            <annotation>
+               <documentation>LY=Líbia</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="MA">
+            <annotation>
+               <documentation>MA=Marokkó</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="MC">
+            <annotation>
+               <documentation>MC=Monaco</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="MD">
+            <annotation>
+               <documentation>MD=Moldova</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="ME">
+            <annotation>
+               <documentation>ME=Montenegró</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="MF">
+            <annotation>
+               <documentation>MF=Saint-Martin</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="MG">
+            <annotation>
+               <documentation>MG=Madagaszkár</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="MH">
+            <annotation>
+               <documentation>MH=Marshall-szigetek</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="MK">
+            <annotation>
+               <documentation>MK=Macedónia</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="ML">
+            <annotation>
+               <documentation>ML=Mali</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="MM">
+            <annotation>
+               <documentation>MM=Mianmar</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="MN">
+            <annotation>
+               <documentation>MN=Mongólia</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="MO">
+            <annotation>
+               <documentation>MO=Makao</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="MP">
+            <annotation>
+               <documentation>MP=Észak Mariana szigetek</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="MQ">
+            <annotation>
+               <documentation>MQ=Martinique</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="MR">
+            <annotation>
+               <documentation>MR=Mauritánia</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="MS">
+            <annotation>
+               <documentation>MS=Montserrat</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="MT">
+            <annotation>
+               <documentation>MT=Málta</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="MU">
+            <annotation>
+               <documentation>MU=Mauritius</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="MV">
+            <annotation>
+               <documentation>MV=Maldív-szigetek</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="MW">
+            <annotation>
+               <documentation>MW=Malawi</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="MX">
+            <annotation>
+               <documentation>MX=Mexikó</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="MY">
+            <annotation>
+               <documentation>MY=Malajzia</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="MZ">
+            <annotation>
+               <documentation>MZ=Mozambik</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="NA">
+            <annotation>
+               <documentation>NA=Namíbia</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="NB">
+            <annotation>
+               <documentation>NB=Országok szerint nem besorolható</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="NC">
+            <annotation>
+               <documentation>NC=Új-Kaledónia</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="NE">
+            <annotation>
+               <documentation>NE=Niger</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="NF">
+            <annotation>
+               <documentation>NF=Norfolk szigetek</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="NG">
+            <annotation>
+               <documentation>NG=Nigéria</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="NI">
+            <annotation>
+               <documentation>NI=Nicaragua</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="NL">
+            <annotation>
+               <documentation>NL=Hollandia</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="NO">
+            <annotation>
+               <documentation>NO=Norvégia</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="NP">
+            <annotation>
+               <documentation>NP=Nepál</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="NR">
+            <annotation>
+               <documentation>NR=Nauru</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="NU">
+            <annotation>
+               <documentation>NU=Niue</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="NZ">
+            <annotation>
+               <documentation>NZ=Új-Zéland</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="OM">
+            <annotation>
+               <documentation>OM=Omán</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="PA">
+            <annotation>
+               <documentation>PA=Panama</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="PE">
+            <annotation>
+               <documentation>PE=Peru</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="PF">
+            <annotation>
+               <documentation>PF=Francia Polinézia</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="PG">
+            <annotation>
+               <documentation>PG=Pápua Új-Guinea</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="PH">
+            <annotation>
+               <documentation>PH=Fülöp-szigetek</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="PK">
+            <annotation>
+               <documentation>PK=Pakisztán</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="PL">
+            <annotation>
+               <documentation>PL=Lengyelország</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="PM">
+            <annotation>
+               <documentation>PM=Saint Pierre és Miquelon</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="PN">
+            <annotation>
+               <documentation>PN=Pitcairn szigetek</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="PR">
+            <annotation>
+               <documentation>PR=Puerto Rico</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="PS">
+            <annotation>
+               <documentation>PS=Palesztina</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="PT">
+            <annotation>
+               <documentation>PT=Portugália</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="PW">
+            <annotation>
+               <documentation>PW=Palau</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="PY">
+            <annotation>
+               <documentation>PY=Paraguay</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="QA">
+            <annotation>
+               <documentation>QA=Katar</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="RE">
+            <annotation>
+               <documentation>RE=Réunion</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="RO">
+            <annotation>
+               <documentation>RO=Románia</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="RS">
+            <annotation>
+               <documentation>RS=Szerbia</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="RU">
+            <annotation>
+               <documentation>RU=Oroszország</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="RW">
+            <annotation>
+               <documentation>RW=Ruanda</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="SA">
+            <annotation>
+               <documentation>SA=Szaúd-Arábia</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="SB">
+            <annotation>
+               <documentation>SB=Salamon-szigetek</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="SC">
+            <annotation>
+               <documentation>SC=Seychelle-szigetek</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="SD">
+            <annotation>
+               <documentation>SD=Szudán</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="SE">
+            <annotation>
+               <documentation>SE=Svédország</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="SG">
+            <annotation>
+               <documentation>SG=Szingapúr</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="SH">
+            <annotation>
+               <documentation>SH=Szent Ilona</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="SI">
+            <annotation>
+               <documentation>SI=Szlovénia</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="SJ">
+            <annotation>
+               <documentation>SJ=Svalbard és Jan Mayen</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="SK">
+            <annotation>
+               <documentation>SK=Szlovákia</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="SL">
+            <annotation>
+               <documentation>SL=Sierra Leone</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="SM">
+            <annotation>
+               <documentation>SM=San Marino</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="SN">
+            <annotation>
+               <documentation>SN=Szenegál</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="SO">
+            <annotation>
+               <documentation>SO=Szomália</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="SR">
+            <annotation>
+               <documentation>SR=Suriname</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="SS">
+            <annotation>
+               <documentation>SS=Dél-Szudán</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="ST">
+            <annotation>
+               <documentation>ST=Sao Tomé és Príncipe</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="SV">
+            <annotation>
+               <documentation>SV=Salvador</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="SX">
+            <annotation>
+               <documentation>SX=Sint Marteen</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="SY">
+            <annotation>
+               <documentation>SY=Szíria</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="SZ">
+            <annotation>
+               <documentation>SZ=Szváziföld</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="TC">
+            <annotation>
+               <documentation>TC=Turks- és Caicos-szigetek</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="TD">
+            <annotation>
+               <documentation>TD=Csád</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="TF">
+            <annotation>
+               <documentation>TF=Francia déli területek</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="TG">
+            <annotation>
+               <documentation>TG=Togo</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="TH">
+            <annotation>
+               <documentation>TH=Thaiföld</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="TJ">
+            <annotation>
+               <documentation>TJ=Tádzsikisztán</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="TK">
+            <annotation>
+               <documentation>TK=Tokelau</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="TL">
+            <annotation>
+               <documentation>TL=Kelet-Timor</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="TM">
+            <annotation>
+               <documentation>TM=Türkmenisztán</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="TN">
+            <annotation>
+               <documentation>TN=Tunézia</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="TO">
+            <annotation>
+               <documentation>TO=Tonga</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="TR">
+            <annotation>
+               <documentation>TR=Törökország</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="TT">
+            <annotation>
+               <documentation>TT=Trinidad és Tobago</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="TV">
+            <annotation>
+               <documentation>TV=Tuvalu</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="TW">
+            <annotation>
+               <documentation>TW=Tajvan</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="TZ">
+            <annotation>
+               <documentation>TZ=Tanzánia</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="UA">
+            <annotation>
+               <documentation>UA=Ukrajna</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="UG">
+            <annotation>
+               <documentation>UG=Uganda</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="UM">
+            <annotation>
+               <documentation>UM=Egyesült Államok külterületei</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="US">
+            <annotation>
+               <documentation>US=Egyesült Államok</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="UY">
+            <annotation>
+               <documentation>UY=Uruguay</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="UZ">
+            <annotation>
+               <documentation>UZ=Üzbegisztán</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="VA">
+            <annotation>
+               <documentation>VA=Vatikán</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="VC">
+            <annotation>
+               <documentation>VC=Saint Vincent</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="VE">
+            <annotation>
+               <documentation>VE=Venezuela</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="VG">
+            <annotation>
+               <documentation>VG=Brit Virgin-szigetek</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="VI">
+            <annotation>
+               <documentation>VI=Amerikai Virgin-szigetek</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="VN">
+            <annotation>
+               <documentation>VN=Vietnam</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="VU">
+            <annotation>
+               <documentation>VU=Vanuatu</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="W1">
+            <annotation>
+               <documentation>W1=Gáza és Jerikó</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="WF">
+            <annotation>
+               <documentation>WF=Wallis és Futuna</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="WS">
+            <annotation>
+               <documentation>WS=Szamoa</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="XK">
+            <annotation>
+               <documentation>XK=Koszovó</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="YE">
+            <annotation>
+               <documentation>YE=Jemen</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="YT">
+            <annotation>
+               <documentation>YT=Mayotte</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="ZA">
+            <annotation>
+               <documentation>ZA=Dél-Afrika</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="ZM">
+            <annotation>
+               <documentation>ZM=Zambia</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="ZW">
+            <annotation>
+               <documentation>ZW=Zimbabwe</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="XC">
+            <annotation>
+               <documentation>XC=Ceuta</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="XL">
+            <annotation>
+               <documentation>XL=Melilla</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="XX">
+            <annotation>
+               <documentation>XX=Hontalan</documentation>
+            </annotation>
+         </enumeration>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_VPOP_KSZ17_0A0001D009A">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="alulj">
+            <annotation>
+               <documentation>alulj=aluljáró</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="bokor">
+            <annotation>
+               <documentation>bokor=bokor</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="bástya">
+            <annotation>
+               <documentation>bástya=bástya</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="csator">
+            <annotation>
+               <documentation>csator=csatorna</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="domb">
+            <annotation>
+               <documentation>domb=domb</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="dűlő">
+            <annotation>
+               <documentation>dűlő=dűlő</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="dűlőút">
+            <annotation>
+               <documentation>dűlőút=dűlőút</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="erdős.">
+            <annotation>
+               <documentation>erdős.=erdősor</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="fasor">
+            <annotation>
+               <documentation>fasor=fasor</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="folyam">
+            <annotation>
+               <documentation>folyam=folyam</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="folyó">
+            <annotation>
+               <documentation>folyó=folyó</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="fordul">
+            <annotation>
+               <documentation>fordul=forduló</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="gát">
+            <annotation>
+               <documentation>gát=gát</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="hat.s">
+            <annotation>
+               <documentation>hat.s=határsor</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="hatút">
+            <annotation>
+               <documentation>hatút=határút</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="hegy">
+            <annotation>
+               <documentation>hegy=hegy</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="híd">
+            <annotation>
+               <documentation>híd=híd</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="kapu">
+            <annotation>
+               <documentation>kapu=kapu</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="kert">
+            <annotation>
+               <documentation>kert=kert</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="kilátó">
+            <annotation>
+               <documentation>kilátó=kilátó</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="körtér">
+            <annotation>
+               <documentation>körtér=körtér</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="körönd">
+            <annotation>
+               <documentation>körönd=körönd</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="körút">
+            <annotation>
+               <documentation>körút=körút</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="köz">
+            <annotation>
+               <documentation>köz=köz</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="közút">
+            <annotation>
+               <documentation>közút=közút</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="lakópark">
+            <annotation>
+               <documentation>lakópark=lakópark</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="lejtő">
+            <annotation>
+               <documentation>lejtő=lejtő</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="liget">
+            <annotation>
+               <documentation>liget=liget</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="ltp">
+            <annotation>
+               <documentation>ltp=lakótelep</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="lépcső">
+            <annotation>
+               <documentation>lépcső=lépcső</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="mélyút">
+            <annotation>
+               <documentation>mélyút=mélyút</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="park">
+            <annotation>
+               <documentation>park=park</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="part">
+            <annotation>
+               <documentation>part=part</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="patak">
+            <annotation>
+               <documentation>patak=patak</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="puszta">
+            <annotation>
+               <documentation>puszta=puszta</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="rakprt">
+            <annotation>
+               <documentation>rakprt=rakpart</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="sor">
+            <annotation>
+               <documentation>sor=sor</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="sug.út">
+            <annotation>
+               <documentation>sug.út=sugárút</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="sziget">
+            <annotation>
+               <documentation>sziget=sziget</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="szoros">
+            <annotation>
+               <documentation>szoros=szoros</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="sétaút">
+            <annotation>
+               <documentation>sétaút=sétaút</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="sétány">
+            <annotation>
+               <documentation>sétány=sétány</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="tag">
+            <annotation>
+               <documentation>tag=tag</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="tanya">
+            <annotation>
+               <documentation>tanya=tanya</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="telep">
+            <annotation>
+               <documentation>telep=telep</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="tenger">
+            <annotation>
+               <documentation>tenger=tenger</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="tér">
+            <annotation>
+               <documentation>tér=tér</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="tó">
+            <annotation>
+               <documentation>tó=tó</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="udvar">
+            <annotation>
+               <documentation>udvar=udvar</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="utca">
+            <annotation>
+               <documentation>utca=utca</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="völgy">
+            <annotation>
+               <documentation>völgy=völgy</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="árok">
+            <annotation>
+               <documentation>árok=árok</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="átjáró">
+            <annotation>
+               <documentation>átjáró=átjáró</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="ér">
+            <annotation>
+               <documentation>ér=ér</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="óceán">
+            <annotation>
+               <documentation>óceán=óceán</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="öböl">
+            <annotation>
+               <documentation>öböl=öböl</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="ösvén">
+            <annotation>
+               <documentation>ösvén=ösvény</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="út">
+            <annotation>
+               <documentation>út=út</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="útja">
+            <annotation>
+               <documentation>útja=útja</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="üdülő">
+            <annotation>
+               <documentation>üdülő=üdülőpart</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="tere">
+            <annotation>
+               <documentation>tere=tere</documentation>
+            </annotation>
+         </enumeration>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_VPOP_KSZ17_0A0001D003A">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="bank">
+            <annotation>
+               <documentation>bank</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="pénzváltó iroda">
+            <annotation>
+               <documentation>pénzváltó iroda</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="pénzátutalási szolgáltató">
+            <annotation>
+               <documentation>pénzátutalási szolgáltató</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="befektetési szolgáltató">
+            <annotation>
+               <documentation>befektetési szolgáltató</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="biztosítási szolgáltató">
+            <annotation>
+               <documentation>biztosítási szolgáltató</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="árutőzsdei szolgáltató">
+            <annotation>
+               <documentation>árutőzsdei szolgáltató</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="önkéntes kölcsönös biztosítópénztár">
+            <annotation>
+               <documentation>önkéntes kölcsönös biztosítópénztár</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="postai szolgáltató">
+            <annotation>
+               <documentation>postai szolgáltató</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="foglalkoztatói nyugdíjszolgáltató intézményre">
+            <annotation>
+               <documentation>foglalkoztatói nyugdíjszolgáltató intézményre</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="egyéb hitelintézet">
+            <annotation>
+               <documentation>egyéb hitelintézet</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="egyéb pénzügyi szolgáltató">
+            <annotation>
+               <documentation>egyéb pénzügyi szolgáltató</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="Magyar Államkincstár">
+            <annotation>
+               <documentation>Magyar Államkincstár</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="ingatlan tulajdonjoga átruházásának, bérleti jogának üzletszerű közvetítését végző">
+            <annotation>
+               <documentation>ingatlan tulajdonjoga átruházásának, bérleti jogának üzletszerű közvetítését végző</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="saját tulajdonú ingatlan üzletszerű adásvételét végző">
+            <annotation>
+               <documentation>saját tulajdonú ingatlan üzletszerű adásvételét végző</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="könyvvizsgálói tevékenységet végző">
+            <annotation>
+               <documentation>könyvvizsgálói tevékenységet végző</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="könyvviteli (könyvelői) tevékenységet megbízási, illetve vállalkozási jogviszony alapján végző">
+            <annotation>
+               <documentation>könyvviteli (könyvelői) tevékenységet megbízási, illetve vállalkozási jogviszony alapján végző</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="adószakértői, okleveles adószakértői, adótanácsadói tevékenységet megbízási, illetve vállalkozási jogviszony alapján végző">
+            <annotation>
+               <documentation>adószakértői, okleveles adószakértői, adótanácsadói tevékenységet megbízási, illetve vállalkozási jogviszony alapján végző</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="játékkaszinót, kártyatermet működtetőre vagy távszerencsejátéknak nem minősülő fogadást, távszerencsejátékot, online kaszinójátékot szervező">
+            <annotation>
+               <documentation>játékkaszinót, kártyatermet működtetőre vagy távszerencsejátéknak nem minősülő fogadást, távszerencsejátékot, online kaszinójátékot szervező</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="nemesfémmel vagy az ezekből készült tárgyakkal kereskedő">
+            <annotation>
+               <documentation>nemesfémmel vagy az ezekből készült tárgyakkal kereskedő</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="árukereskedő">
+            <annotation>
+               <documentation>árukereskedő</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="ügyvéd">
+            <annotation>
+               <documentation>ügyvéd</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="közjegyző">
+            <annotation>
+               <documentation>közjegyző</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="bizalmi vagyonkezelő">
+            <annotation>
+               <documentation>bizalmi vagyonkezelő</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="virtuális fizetőeszköz váltó platform">
+            <annotation>
+               <documentation>virtuális fizetőeszköz váltó platform</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="letétkezelő pénztárca-szolgáltató">
+            <annotation>
+               <documentation>letétkezelő pénztárca-szolgáltató</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="kulturális javak kereskedelmével foglalkozó szolgáltató">
+            <annotation>
+               <documentation>kulturális javak kereskedelmével foglalkozó szolgáltató</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="kulturális javak kereskedelmével szabadkikötőkben foglalkozó szolgáltató">
+            <annotation>
+               <documentation>kulturális javak kereskedelmével szabadkikötőkben foglalkozó szolgáltató</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="székhelyszolgáltató">
+            <annotation>
+               <documentation>székhelyszolgáltató</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="központi kapcsolattartó pont">
+            <annotation>
+               <documentation>központi kapcsolattartó pont</documentation>
+            </annotation>
+         </enumeration>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_VPOP_KSZ17_0A0001E0001AA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="SAJÁT.V">
+            <annotation>
+               <documentation>SAJÁT.V=Vezetékes telefon</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="SAJÁT.M">
+            <annotation>
+               <documentation>SAJÁT.M=Mobiltelefon</documentation>
+            </annotation>
+         </enumeration>
+         <enumeration value="EMAIL">
+            <annotation>
+               <documentation>EMAIL=E-mail</documentation>
+            </annotation>
+         </enumeration>
+      </restriction>
+   </simpleType>
+   <complexType name="Form_VPOP_KSZ17_Type">
+      <annotation>
+         <documentation>A teljes nyomtatvány VPOP_KSZ17 részbiztonylatának szerkezetét leíró típus.</documentation>
+      </annotation>
+      <sequence>
+         <element name="Block_120001"
+                  type="tns:Block_VPOP_KSZ17_120001_Type"
+                  minOccurs="0"
+                  meta:metaType="BlockMetaType">
+            <annotation>
+               <documentation>Kijelölt személy</documentation>
+            </annotation>
+         </element>
+      </sequence>
+   </complexType>
+   <complexType name="Block_VPOP_KSZ17_120001_Type">
+      <annotation>
+         <documentation>Kijelölt személy</documentation>
+      </annotation>
+      <all>
+         <element name="FieldGroup_120002"
+                  type="tns:FieldGroup_VPOP_KSZ17_120002_Type"
+                  minOccurs="0"
+                  meta:metaType="FieldGroupMetaType">
+            <annotation>
+               <documentation>1/A) Tájékoztatás célja</documentation>
+            </annotation>
+         </element>
+         <element name="FieldGroup_120004"
+                  type="tns:FieldGroup_VPOP_KSZ17_120004_Type"
+                  minOccurs="0"
+                  meta:metaType="FieldGroupMetaType">
+            <annotation>
+               <documentation>1/B) Szolgáltató adatai</documentation>
+            </annotation>
+         </element>
+         <element name="FieldGroup_120010"
+                  type="tns:FieldGroup_VPOP_KSZ17_120010_Type"
+                  minOccurs="0"
+                  meta:metaType="FieldGroupMetaType">
+            <annotation>
+               <documentation>1/C) Kijelölt személy adatai</documentation>
+            </annotation>
+         </element>
+         <element name="FieldGroup_120027"
+                  type="tns:FieldGroup_VPOP_KSZ17_120027_Type"
+                  minOccurs="0"
+                  meta:metaType="FieldGroupMetaType">
+            <annotation>
+               <documentation>1/D) Megjegyzés</documentation>
+            </annotation>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="FieldGroup_VPOP_KSZ17_120002_Type">
+      <annotation>
+         <documentation>1/A) Tájékoztatás célja</documentation>
+      </annotation>
+      <all>
+         <element name="Field_0A0001C002A"
+                  minOccurs="0"
+                  type="tns:Enum_VPOP_KSZ17_0A0001C002A"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Jogszabályi kötelezettség: (kisze.pmt)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0A0001C003A"
+                  minOccurs="0"
+                  type="tns:Enum_VPOP_KSZ17_0A0001C003A"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Tájékoztatás: (kisze.tajekoztatas)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0A0001C00500A"
+                  minOccurs="0"
+                  type="xs:boolean"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Korábban megadott adat módosítása (kisze.korabbiadat)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0A0001C00501A"
+                  minOccurs="0"
+                  type="xs:boolean"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Új adat rögzítése (kisze.ujadat)</documentation>
+            </annotation>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="FieldGroup_VPOP_KSZ17_120004_Type">
+      <annotation>
+         <documentation>1/B) Szolgáltató adatai</documentation>
+      </annotation>
+      <all>
+         <element name="Field_0A0001D001A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Név: (kisze.beszolg.nev)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="40"/>
+                  <pattern value="[\P{C}]*[^\s][\P{C}]*"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0A0001D002A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Adószám: (kisze.beszolg.adosz)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[\P{C}]*[^\s][\P{C}]*"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0A0001D003A"
+                  minOccurs="0"
+                  type="tns:Enum_VPOP_KSZ17_0A0001D003A"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Szolgáltatói kör: (kisze.beszolg.szolgkor)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0A0001D004A"
+                  minOccurs="0"
+                  type="tns:Enum_VPOP_KSZ17_0A0001D004A"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Országkód: (kisze.beszolg.szekhely.orsz)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0A0001D005A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Irsz.: (kisze.beszolg.szekhely.irsz)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="6"/>
+                  <pattern value="[\P{C}]*[^\s][\P{C}]*"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0A0001D006A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Helységnév: (kisze.beszolg.szekhely.helys)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="40"/>
+                  <pattern value="[\P{C}]*[^\s][\P{C}]*"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0A0001D007A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Kerület: (kisze.beszolg.szekhely.ker)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="2"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0A0001D008A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Közterületnév: (kisze.beszolg.szekhely.kozter)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="40"/>
+                  <pattern value="[\P{C}]*[^\s][\P{C}]*"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0A0001D009A"
+                  minOccurs="0"
+                  type="tns:Enum_VPOP_KSZ17_0A0001D009A"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Közterület jellege: (kisze.beszolg.szekhely.kozterj)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0A0001D010A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Házszám: (kisze.beszolg.szekhely.hsz)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="5"/>
+                  <pattern value="[\P{C}]*[^\s][\P{C}]*"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0A0001D011A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Perszám: (kisze.beszolg.szekhely.persz)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="4"/>
+                  <pattern value="[\P{C}]*[^\s][\P{C}]*"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0A0001D012A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Emelet: (kisze.beszolg.szekhely.em)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="4"/>
+                  <pattern value="[\P{C}]*[^\s][\P{C}]*"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0A0001D013A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Ajtó: (kisze.beszolg.szekhely.ajto)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="4"/>
+                  <pattern value="[\P{C}]*[^\s][\P{C}]*"/>
+               </restriction>
+            </simpleType>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="FieldGroup_VPOP_KSZ17_120010_Type">
+      <annotation>
+         <documentation>1/C) Kijelölt személy adatai</documentation>
+      </annotation>
+      <all>
+         <element name="Field_0A0001E001A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Név: (kisze.nev)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="50"/>
+                  <pattern value="[\P{C}]*[^\s][\P{C}]*"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0A0001E002A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Beosztás: (kisze.beo)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="50"/>
+                  <pattern value="[\P{C}]*[^\s][\P{C}]*"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0A0001E003A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Tájékoztatási sorszám: (kisze.azonosito)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="6"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0A0001E004A"
+                  minOccurs="0"
+                  type="xs:boolean"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Megegyezik a Szolgáltatóval (kisze.azonos.cim)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0A0001E005A"
+                  minOccurs="0"
+                  type="tns:Enum_VPOP_KSZ17_0A0001D004A"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Országkód: (kisze.mh.cim.orsz)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0A0001E006A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Irsz.: (kisze.mh.cim.irsz)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="6"/>
+                  <pattern value="[\P{C}]*[^\s][\P{C}]*"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0A0001E007A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Helységnév: (kisze.mh.cim.helys)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="40"/>
+                  <pattern value="[\P{C}]*[^\s][\P{C}]*"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0A0001E008A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Kerület: (kisze.mh.cim.ker)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="2"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0A0001E009A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Közterületnév: (kisze.mh.cim.kozter)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="40"/>
+                  <pattern value="[\P{C}]*[^\s][\P{C}]*"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0A0001E010A"
+                  minOccurs="0"
+                  type="tns:Enum_VPOP_KSZ17_0A0001D009A"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Közterület jellege: (kisze.mh.cim.kozterj)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0A0001E011A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Házszám: (kisze.mh.cim.hsz)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="5"/>
+                  <pattern value="[\P{C}]*[^\s][\P{C}]*"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0A0001E012A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Perszám: (kisze.mh.cim.persz)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="4"/>
+                  <pattern value="[\P{C}]*[^\s][\P{C}]*"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0A0001E013A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Emelet: (kisze.mh.cim.em)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="4"/>
+                  <pattern value="[\P{C}]*[^\s][\P{C}]*"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0A0001E014A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Ajtó: (kisze.mh.cim.ajto)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="4"/>
+                  <pattern value="[\P{C}]*[^\s][\P{C}]*"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0A0001E0001AA"
+                  minOccurs="0"
+                  type="tns:Enum_VPOP_KSZ17_0A0001E0001AA"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>(kisze.mh.elerhetoseg1)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0A0001E0001BA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Számított mező, tartalma kalkulációval (vagy XPath futtatással) kerül meghatározásra. ¦ (kisze.mh.elerhetoseg.nev1)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="25"/>
+                  <pattern value="[\P{C}]*[^\s][\P{C}]*"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0A0001E0001CA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>(kisze.mh.elerhetoseg.szam1)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="40"/>
+                  <pattern value="[\P{C}]*[^\s][\P{C}]*"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0A0001E0002AA"
+                  minOccurs="0"
+                  type="tns:Enum_VPOP_KSZ17_0A0001E0001AA"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>(kisze.mh.elerhetoseg2)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0A0001E0002BA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Számított mező, tartalma kalkulációval (vagy XPath futtatással) kerül meghatározásra. ¦ (kisze.mh.elerhetoseg.nev2)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="25"/>
+                  <pattern value="[\P{C}]*[^\s][\P{C}]*"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0A0001E0002CA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>(kisze.mh.elerhetoseg.szam2)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="40"/>
+                  <pattern value="[\P{C}]*[^\s][\P{C}]*"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0A0001E0003AA"
+                  minOccurs="0"
+                  type="tns:Enum_VPOP_KSZ17_0A0001E0001AA"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>(kisze.mh.elerhetoseg3)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0A0001E0003BA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Számított mező, tartalma kalkulációval (vagy XPath futtatással) kerül meghatározásra. ¦ (kisze.mh.elerhetoseg.nev3)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="25"/>
+                  <pattern value="[\P{C}]*[^\s][\P{C}]*"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0A0001E0003CA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>(kisze.mh.elerhetoseg.szam3)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="40"/>
+                  <pattern value="[\P{C}]*[^\s][\P{C}]*"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0A0001E0004AA"
+                  minOccurs="0"
+                  type="tns:Enum_VPOP_KSZ17_0A0001E0001AA"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>(kisze.mh.elerhetoseg4)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0A0001E0004BA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Számított mező, tartalma kalkulációval (vagy XPath futtatással) kerül meghatározásra. ¦ (kisze.mh.elerhetoseg.nev4)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="25"/>
+                  <pattern value="[\P{C}]*[^\s][\P{C}]*"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0A0001E0004CA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>(kisze.mh.elerhetoseg.szam4)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="40"/>
+                  <pattern value="[\P{C}]*[^\s][\P{C}]*"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0A0001E0005AA"
+                  minOccurs="0"
+                  type="tns:Enum_VPOP_KSZ17_0A0001E0001AA"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>(kisze.mh.elerhetoseg5)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0A0001E0005BA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Számított mező, tartalma kalkulációval (vagy XPath futtatással) kerül meghatározásra. ¦ (kisze.mh.elerhetoseg.nev5)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="25"/>
+                  <pattern value="[\P{C}]*[^\s][\P{C}]*"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0A0001E0005CA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>(kisze.mh.elerhetoseg.szam5)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="40"/>
+                  <pattern value="[\P{C}]*[^\s][\P{C}]*"/>
+               </restriction>
+            </simpleType>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="FieldGroup_VPOP_KSZ17_120027_Type">
+      <annotation>
+         <documentation>1/D) Megjegyzés</documentation>
+      </annotation>
+      <all>
+         <element name="Field_0A0001F001A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Megjegyzés: (kisze.megjegyzes)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="150"/>
+                  <pattern value="[\t\n\r\P{C}]*[^\s][\t\n\r\P{C}]*"/>
+               </restriction>
+            </simpleType>
+         </element>
+      </all>
+   </complexType>
+</schema>
